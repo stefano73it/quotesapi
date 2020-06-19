@@ -1,0 +1,23 @@
+body {
+    padding-top: 5rem;
+}
+#quotesapi-home-container {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+#author-spinner {
+	vertical-align: baseline;
+	display: none;
+}
+#author-spinner.loading {
+    display: inline-block;
+}
+#quote {
+    margin: 10px 0;
+}
+#error-message {
+	color: #f00;
+	border: 1px solid #f00;
+	margin: 10px 0;
+    display: none;
+}

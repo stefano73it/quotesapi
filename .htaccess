@@ -1,0 +1,13 @@
+Options -Indexes
+Options +FollowSymLinks
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteBase /quotesapi/
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^shout/(.*)$ shout.php?author=$1 [L,QSA]
+</IfModule>

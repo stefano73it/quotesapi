@@ -1,0 +1,19 @@
+{
+	"name" : "stefano73it/quotesapi",
+	"description" : "Quotes API",
+	"type" : "project",
+	"authors" : [{
+			"name" : "Stefano Mallozzi",
+			"email" : "stefano73@outlook.com"
+		}
+	],
+	"require" : {
+		"vlucas/phpdotenv" : "^4.1",
+		"wruczek/php-file-cache": "^0.0.5"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"App\\" : "app/"
+		}
+	}
+}
